@@ -481,32 +481,32 @@ with st.sidebar:
 page = st.session_state["page"]
 
 if page == "Home":
-    from pages import home
+    from app_pages  import home
     home.render()
 elif page == "Upload Data":
-    from pages import upload
+    from app_pages  import upload
     upload.render()
 elif page == "Data Cleaning":
-    from pages import cleaning
+    from app_pages  import cleaning
     cleaning.render()
 elif page == "Data Profiling":
-    from pages import profiling
+    from app_pages  import profiling
     profiling.render()
 elif page == "Data Quality":
-    from pages import quality
+    from app_pages  import quality
     quality.render()
 elif page == "Analytics":
-    from pages import analytics
+    from app_pages  import analytics
     analytics.render()
 elif page == "Visualizations":
-    from pages import visualization
+    from app_pages  import visualization
     visualization.render()
 elif page == "AI Insights":
-    from pages import insights
+    from app_pages  import insights
     insights.render()
 elif page == "Machine Learning":
-    from pages import ml
+    from app_pages  import ml
     ml.render()
 elif page == "Reports":
-    from pages import reports
+    from app_pages  import reports
     reports.render()
